@@ -1,12 +1,9 @@
 {
 	"private": true,
 	"scripts": {
-		"build": "npm run fetch",
+		"build": "npm run fetch && npm run analyze",
 		"fetch": "node --no-warnings get-boosted-boss-data.mjs",
+		"analyze": "node analyze.mjs",
 		"test": "TEST=true node normalize-names.mjs"
-	},
-	"devDependencies": {
-		"glob": "^8.0.3",
-		"jsesc": "^3.0.2"
 	}
 }
