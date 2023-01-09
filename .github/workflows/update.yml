@@ -37,7 +37,8 @@ jobs:
           npm run build
           git config user.name 'Tibia boosted boss bot'
           git config user.email 'boosted-boss@tibiamaps.io'
-          date=$(date +'%Y-%m-%d')
           git add data
-          git commit data -m "Add data for date=${date}" || true
+          node commit-message.mjs > commit_message
+          git commit data --file=commit_message || true
+          rm commit_message
           git push
