@@ -90,6 +90,7 @@ const normalizedToPrettyNames = new Map([
 	['The Unarmored Voidborn', 'The Unarmored Voidborn'],
 	['The Unwelcome', 'The Unwelcome'],
 	['The Winter Bloom', 'The Winter Bloom'],
+	['timira', 'Timira the Many-Headed'], // As seen on tibia.com @ 2023-04-27.
 	['Timira The Many-Headed', 'Timira the Many-Headed'],
 	['Unaz The Mean', 'Unaz the Mean'],
 	['Urmahlullu The Weakened', 'Urmahlullu the Weakened'],

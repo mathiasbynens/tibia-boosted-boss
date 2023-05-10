@@ -80,8 +80,7 @@
 		"The Fear Feaster",
 		"The Moonlight Aster",
 		"The Nightmare Beast",
-		"The Winter Bloom",
-		"Timira the Many-Headed"
+		"The Winter Bloom"
 	],
 	"5": [
 		"Earl Osam",
@@ -97,14 +96,12 @@
 		"The Diamond Blossom",
 		"The Lily of Night",
 		"The Time Guardian",
-		"The Unwelcome"
+		"The Unwelcome",
+		"Timira the Many-Headed"
 	],
 	"6": [
 		"Eradicator",
 		"Sir Nictros",
 		"The Flaming Orchid"
-	],
-	"NaN": [
-		"timira"
 	]
 }
