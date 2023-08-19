@@ -4,6 +4,11 @@
 		"build": "npm run fetch && npm run analyze",
 		"fetch": "node --no-warnings get-boosted-boss-data.mjs",
 		"analyze": "node analyze.mjs",
+		"render": "node render-html.mjs",
 		"test": "TEST=true node normalize-names.mjs"
+	},
+	"devDependencies": {
+		"html-minifier-terser": "^7.2.0",
+		"lodash-es": "^4.17.21"
 	}
 }
