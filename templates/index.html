@@ -38,52 +38,6 @@
 		background: var(--main-background);
 	}
 
-	.table-wrapper {
-		overflow-x: auto;
-	}
-	table {
-		border-collapse: collapse;
-		width: 100%;
-		max-width: 27rem;
-		margin-bottom: 1em;
-		font-variant-numeric: tabular-nums;
-	}
-	thead th {
-		background: var(--darkblue);
-		color: #FFF;
-	}
-	th, td {
-		border: 1px solid var(--table-border);
-		padding: .5em 1em;
-	}
-	td:first-child {
-		padding: 0;
-	}
-	tbody tr:nth-child(odd) {
-		background-color: var(--alt-table-row-background);
-	}
-	td:last-child {
-		text-align: right;
-	}
-	td a {
-		display: flex;
-		align-items: center;
-		padding: .5em 1em;
-		font-weight: bold;
-		color: var(--link-color);
-	}
-	td a:hover, td a:focus {
-		color: var(--link-color-alt);
-		background-color: var(--link-hover-background);
-	}
-	tr:hover s {
-		text-decoration: none;
-	}
-	img {
-		margin-right: 1rem;
-		background: #fff4;
-		image-rendering: pixelated;
-	}
 	figure {
 		display: inline-grid;
 		align-content: center;
@@ -94,8 +48,14 @@
 		padding: 0.5rem;
 		margin: 0;
 	}
+
 	figure:hover {
 		background: var(--alt-table-row-background);
+	}
+
+	img {
+		background: #fff4;
+		image-rendering: pixelated;
 	}
 </style>
 <meta name="referrer" content="no-referrer">
