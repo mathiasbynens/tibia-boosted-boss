@@ -73,6 +73,7 @@ const normalizedToPrettyNames = new Map([
 	['Tarbaz', 'Tarbaz'],
 	['Tentugly', 'Tentugly'],
 	['Thaian', 'Thaian'],
+	['thaian', 'Thaian'], // As seen on tibia.com @ 2024-01-03.
 	['The Blazing Rose', 'The Blazing Rose'],
 	['The Brainstealer', 'The Brainstealer'],
 	['The Diamond Blossom', 'The Diamond Blossom'],
