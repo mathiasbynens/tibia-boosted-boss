@@ -3,7 +3,7 @@ import { toPrettyName } from './normalize-names.mjs';
 
 const getBossBoostInfo = async () => {
 	console.log('Getting list of boostable Tibia bosses + today’s boosted boss…');
-	const response = await fetch('https://api.tibiadata.com/v3/boostablebosses');
+	const response = await fetch('https://api.tibiadata.com/v4/boostablebosses');
 	const data = await response.json();
 	const boostableBossesUgly = data.boostable_bosses
 		.boostable_boss_list
