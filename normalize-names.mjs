@@ -92,6 +92,7 @@ const normalizedToPrettyNames = new Map([
 	['The Scourge Of Oblivion', 'The Scourge of Oblivion'],
 	['The Souldespoiler', 'The Souldespoiler'],
 	['The Source Of Corruption', 'The Source of Corruption'],
+	['The Rootkraken', 'The Rootkraken'],
 	['The Time Guardian', 'The Time Guardian'],
 	['The Unarmored Voidborn', 'The Unarmored Voidborn'],
 	['The Unwelcome', 'The Unwelcome'],
