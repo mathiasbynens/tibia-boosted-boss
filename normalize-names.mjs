@@ -19,6 +19,7 @@ const normalizedToPrettyNames = new Map([
 	['Darkfang', 'Darkfang'],
 	['Deathstrike', 'Deathstrike'],
 	['Despor', 'Despor'],
+	['Dragon Pack', 'Dragon Pack'],
 	['Drume', 'Drume'],
 	['Duke Krule', 'Duke Krule'],
 	['Earl Osam', 'Earl Osam'],
