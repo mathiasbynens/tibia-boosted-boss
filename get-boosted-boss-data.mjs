@@ -31,15 +31,20 @@ const stringify = (object) => {
 	return JSON.stringify(object, null, '\t') + '\n';
 };
 
-await fs.writeFile(
-	`./data/ugly-names.json`,
-	stringify(boostableBossesUgly)
-);
+// The TibiaData API might temporarily return an empty array whenever
+// the upstream HTML format changes. Don’t wipe out the local list of
+// boostable bosses in that case.
+if (boostableBossesUgly.length > 0) {
+	await fs.writeFile(
+		`./data/ugly-names.json`,
+		stringify(boostableBossesUgly)
+	);
 
-await fs.writeFile(
-	`./data/boostable-bosses.json`,
-	stringify(boostableBosses)
-);
+	await fs.writeFile(
+		`./data/boostable-bosses.json`,
+		stringify(boostableBosses)
+	);
+}
 
 const isoDate = (date) => {
 	return date.toISOString().slice(0, 10);
