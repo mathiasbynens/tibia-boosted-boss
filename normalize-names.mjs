@@ -10,6 +10,7 @@ const normalizedToPrettyNames = new Map([
 	['Ahau', 'Ahau'],
 	['Amenef The Burning', 'Amenef the Burning'],
 	['Anomaly', 'Anomaly'],
+	['Arbaziloth', 'Arbaziloth'],
 	['Black Vixen', 'Black Vixen'],
 	['Bloodback', 'Bloodback'],
 	['Brain Head', 'Brain Head'],
