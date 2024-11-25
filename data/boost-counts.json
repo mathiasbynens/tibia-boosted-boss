@@ -1,4 +1,7 @@
 {
+	"0": [
+		"Arbaziloth"
+	],
 	"2": [
 		"Abyssador",
 		"The Rootkraken"
@@ -36,7 +39,6 @@
 		"The Monster",
 		"The Scourge of Oblivion",
 		"The Unarmored Voidborn",
-		"Vok the Freakish",
 		"Zamulosh"
 	],
 	"8": [
@@ -54,7 +56,8 @@
 		"Tentugly",
 		"The Pale Worm",
 		"The Sandking",
-		"Utua Stone Sting"
+		"Utua Stone Sting",
+		"Vok the Freakish"
 	],
 	"9": [
 		"Bloodback",
