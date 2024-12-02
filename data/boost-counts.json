@@ -120,8 +120,10 @@
 	"14": [
 		"Eradicator",
 		"Neferi the Spy",
-		"Ratmiral Blackwhiskers",
 		"Shadowpelt",
 		"The Flaming Orchid"
+	],
+	"15": [
+		"Ratmiral Blackwhiskers"
 	]
 }
