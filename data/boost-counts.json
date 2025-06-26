@@ -41,7 +41,6 @@
 	"10": [
 		"Anomaly",
 		"Bloodback",
-		"Brain Head",
 		"Essence of Malice",
 		"Faceless Bane",
 		"Ghulosh",
@@ -63,6 +62,7 @@
 		"Zamulosh"
 	],
 	"11": [
+		"Brain Head",
 		"Deathstrike",
 		"Ekatrix",
 		"Gnomevil",
