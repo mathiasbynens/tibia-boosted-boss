@@ -12,6 +12,7 @@ const normalizedToPrettyNames = new Map([
 	['Anomaly', 'Anomaly'],
 	['Arbaziloth', 'Arbaziloth'],
 	['Black Vixen', 'Black Vixen'],
+	['Blight Mariner', 'Blight Mariner'],
 	['Bloodback', 'Bloodback'],
 	['Brain Head', 'Brain Head'],
 	['Brokul', 'Brokul'],
@@ -31,11 +32,11 @@ const normalizedToPrettyNames = new Map([
 	['Ghulosh', 'Ghulosh'],
 	['Gnomevil', 'Gnomevil'],
 	['Gorzindel', 'Gorzindel'],
-	['Goshnar\'s Cruelty', 'Goshnar’s Cruelty'],
-	['Goshnar\'s Greed', 'Goshnar’s Greed'],
-	['Goshnar\'s Hatred', 'Goshnar’s Hatred'],
-	['Goshnar\'s Malice', 'Goshnar’s Malice'],
-	['Goshnar\'s Spite', 'Goshnar’s Spite'],
+	["Goshnar's Cruelty", 'Goshnar’s Cruelty'],
+	["Goshnar's Greed", 'Goshnar’s Greed'],
+	["Goshnar's Hatred", 'Goshnar’s Hatred'],
+	["Goshnar's Malice", 'Goshnar’s Malice'],
+	["Goshnar's Spite", 'Goshnar’s Spite'],
 	['Grand Master Oberon', 'Grand Master Oberon'],
 	['Ichgahal', 'Ichgahal'],
 	['Irgix The Flimsy', 'Irgix the Flimsy'],
@@ -90,22 +91,25 @@ const normalizedToPrettyNames = new Map([
 	['The Moonlight Aster', 'The Moonlight Aster'],
 	['The Nightmare Beast', 'The Nightmare Beast'],
 	['The Pale Worm', 'The Pale Worm'],
+	['The Rootkraken', 'The Rootkraken'],
 	['The Sandking', 'The Sandking'],
 	['The Scourge Of Oblivion', 'The Scourge of Oblivion'],
 	['The Souldespoiler', 'The Souldespoiler'],
 	['The Source Of Corruption', 'The Source of Corruption'],
-	['The Rootkraken', 'The Rootkraken'],
 	['The Time Guardian', 'The Time Guardian'],
 	['The Unarmored Voidborn', 'The Unarmored Voidborn'],
 	['The Unwelcome', 'The Unwelcome'],
 	['The Winter Bloom', 'The Winter Bloom'],
 	['Timira The Many-Headed', 'Timira the Many-Headed'],
 	['timira', 'Timira the Many-Headed'], // As seen on tibia.com @ 2023-04-27.
+	['Tropical Desolator', 'Tropical Desolator'],
 	['Unaz The Mean', 'Unaz the Mean'],
 	['Urmahlullu The Weakened', 'Urmahlullu the Weakened'],
 	['Utua Stone Sting', 'Utua Stone Sting'],
 	['Vemiath', 'Vemiath'],
+	['Vladrukh', 'Vladrukh'],
 	['Vok The Freakish', 'Vok the Freakish'],
+	['Wrathful Archivist', 'Wrathful Archivist'],
 	['Yirkas Blue Scales', 'Yirkas Blue Scales'],
 	['Zamulosh', 'Zamulosh'],
 ]);
@@ -141,14 +145,23 @@ const test = async () => {
 	const UGLY_NAMES = await readUglyNames();
 
 	for (const [uglyName, prettyName] of normalizedToPrettyNames) {
-		console.assert(UGLY_NAMES.has(uglyName), `Expected ${uglyName} to appear in list of boostable bosses.`);
+		console.assert(
+			UGLY_NAMES.has(uglyName),
+			`Expected ${uglyName} to appear in list of boostable bosses.`,
+		);
 		if (uglyName !== prettyName) {
-			console.assert(!UGLY_NAMES.has(prettyName), `Expected ${prettyName} to NOT appear in list of ugly boostable boss names.`);
+			console.assert(
+				!UGLY_NAMES.has(prettyName),
+				`Expected ${prettyName} to NOT appear in list of ugly boostable boss names.`,
+			);
 		}
 	}
 
 	for (const race of UGLY_NAMES) {
-		console.assert(normalizedToPrettyNames.has(race), `Missing normalization map entry: ${race}`);
+		console.assert(
+			normalizedToPrettyNames.has(race),
+			`Missing normalization map entry: ${race}`,
+		);
 	}
 };
 
