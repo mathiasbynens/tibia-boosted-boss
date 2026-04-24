@@ -6,6 +6,7 @@ const normalizedToPrettyNames = new Map([
 	// kill stats at [1] since the “boostable bosses” page has its own
 	// unique casings.
 	// [1]: https://github.com/tibiamaps/tibia-kill-stats/blob/HEAD/normalize-names.mjs
+	['abyssador', 'Abyssador'], // As seen on tibia.com @ 2025-11-16.
 	['Abyssador', 'Abyssador'],
 	['Adventurer Group', 'Adventurer Group'],
 	['Ahau', 'Ahau'],
@@ -46,6 +47,7 @@ const normalizedToPrettyNames = new Map([
 	['Lloyd', 'Lloyd'],
 	['Lokathmor', 'Lokathmor'],
 	['Lord Azaram', 'Lord Azaram'],
+	['lordretro', 'Lord Retro'], // As seen on tibia.com @ 2026-03-14.
 	['Lord Retro', 'Lord Retro'],
 	['Magma Bubble', 'Magma Bubble'],
 	['Mazoran', 'Mazoran'],
@@ -150,6 +152,9 @@ const test = async () => {
 	const UGLY_NAMES = await readUglyNames();
 
 	for (const [uglyName, prettyName] of normalizedToPrettyNames) {
+		// Ignore ugly names starting with a lowercase letter because of
+		// the occasional tibia.com bug.
+		if (/^[a-z]/.test(uglyName)) continue;
 		console.assert(
 			UGLY_NAMES.has(uglyName),
 			`Expected ${uglyName} to appear in list of boostable bosses.`,
