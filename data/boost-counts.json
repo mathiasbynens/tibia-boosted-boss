@@ -1,6 +1,9 @@
 {
 	"0": [
-		"Court Warlock"
+		"Court Warlock",
+		"Maior Domus",
+		"Mimar Haffar",
+		"The Moonsnow Magnolia"
 	],
 	"1": [
 		"Ice Horror"
@@ -84,7 +87,6 @@
 		"The Fear Feaster",
 		"The Source of Corruption",
 		"The Unarmored Voidborn",
-		"Vok the Freakish",
 		"Zamulosh"
 	],
 	"15": [
@@ -104,6 +106,7 @@
 		"The Dread Maiden",
 		"The Moonlight Aster",
 		"The Time Guardian",
+		"Vok the Freakish",
 		"Yirkas Blue Scales"
 	],
 	"16": [
